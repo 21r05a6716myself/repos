@@ -1,0 +1,24 @@
+html(lang = "en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE-edge")
+        meta(name="viewport", content="width=device-width,initial-scale=1.0")
+        title Login Page
+        style 
+            include ./my.css
+
+    body
+        div
+            include ./index.pug
+            h1 Login Form
+            br
+            form(action="/login" method="post" align="center")
+                label(for="username") UserName
+                input(type="text" name="username")
+                br
+                br 
+                label(for="password") Password
+                input(type="password" name="password")
+                br
+                br 
+                input(type="submit" name="Login" value="Login")
